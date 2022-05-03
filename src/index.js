@@ -4,7 +4,7 @@ import Mail from './controller/Mail';
 import cors from 'cors'
 
 
-const port = process.env.PORT | 5000;
+const port = process.env.PORT || 5000;
 const mail = new Mail();
 const app = express();
 
