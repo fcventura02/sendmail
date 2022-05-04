@@ -12,5 +12,6 @@ app.use(cors())
 
 app.use(express.json());
 app.post("/", mail.send);
+app.get("/", (req, res)=> res.send("Hello send mail"));
 
 app.listen(port, () => console.log(`Running on port ${port}`))
